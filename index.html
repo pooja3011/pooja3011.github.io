@@ -3,20 +3,27 @@
 <title>project</title>
 </head>
 <body>
-	
+<script type="text/javascript">
+	function check(){
+	var userid =document.getElementById("userid").value;
+	var password =document.getElementById("password").value;
+	console.log(userid);
+	console.log(password);
+    }
+</script>	
 	<h1>Login</h1>
 	<p>Please enter user id and password.</p>
     <hr>
-	<form action="/login.html">
+	<form action="/pooja.html">
   <b>User Id </b>
-  <input type="text" name="userid" placeholder="Enter User Id">
+  <input type="text" id = "userid" name="userid" placeholder="Enter User Id" value="">
   
   <br>
   <br>
   <b>Password </b>
-  <input type="password" name="password" placeholder="Enter Password">
+  <input type="password" id ="password" name="password" placeholder="Enter Password" value="">
   <br><br>
-  <input type="submit" value="Submit">
+  <input type="button" value="Submit" onclick="check()">
 </form> 
 </body>	
 </html>
